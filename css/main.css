@@ -67,8 +67,19 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
-    margin: 0 auto;
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 .section {
@@ -322,6 +333,36 @@ body {
 }
 .contact-form__button:hover, .contact-form__button:focus {
   background-color: #188ce8;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-address__mail {
+  display: none;
+}
+
+.menu-address__phone-number {
+  display: none;
+}
+
+.mobile-menu-open-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin-left: auto;
+}
+
+.mobile-menu-open-button__icon {
+  fill: #212121;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero {

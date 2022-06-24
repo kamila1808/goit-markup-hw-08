@@ -1,3 +1,33 @@
+.menu {
+    display: none;
+}
+
+.menu-address__mail {
+    display: none;
+}
+
+.menu-address__phone-number {
+    display: none;
+}
+
+.mobile-menu-open-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    margin-left: auto;
+}
+
+.mobile-menu-open-button__icon {
+    fill:#212121;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 // .page-header {
 //   border-bottom: 1px solid #ececec;
 // }
