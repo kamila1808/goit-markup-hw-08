@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">   
+</head>
+<body>
+    <!--Header-->
+    <header class="page-header">
+        <div class="container header-container">
+        <nav class="navigation">
+            <!--логотип сайта-->
+            <a class="logo logo-header link" href="./index.html">Web<span class="logo logo_theme_light">Studio</span></a>
+            <ul class="menu list">
+                <li class="menu__item">
+                    <a class="menu__link link" href=./index.html>Студия</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link_current link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="menu-address link list">
+            <li class="menu-address__item">
+                <a class="menu-address__mail link list" href="mailto:info@devstudio.com">
+                <svg class="menu-address__icon" width="16" height="12">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+            </a>
+            </li>
+            <li class="menu-address__item">
+                <a class="menu-address__phone-number link" href="tel:+380961111111">
+                    <svg class="menu-address__phone-icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+    </header>
+<main>
+<main>
+<section class="portfolio section">
+    <div class="container">
+<ul class="filter-portfolio-list list">
+    <li class="filter-portfolio-list__item">
+        <button class="filter-portfolio-list__button" type="button">Все</button>
+    </li>
+    <li class="filter-portfolio-list__item">
+        <button class="filter-portfolio-list__button" type="button">Веб-сайты</button>
+    </li>
+    <li class="filter-portfolio-list__item">
+        <button class="filter-portfolio-list__button" type="button">Приложения</button>
+    </li>
+    <li class="filter-portfolio-list__item">
+        <button class="filter-portfolio-list__button" type="button">Дизайн</button>     
+    </li>
+    <li class="filter-portfolio-list__item">
+        <button class="filter-portfolio-list__button" type="button">Маркетинг</button>
+    </li>
+</ul>
+<!-- Скрытый заголовок -->
+    <h1 class="visually-hidden portfolio__title">Наши работы</h1> 
+    <ul class="portfolio-list list">
+        <li class="portfolio-list__item">
+      <a class="portfolio-list__link link" href="">
+          <div class="portfolio-list__box">
+            <img src="./images/portfolio/img-0.jpg" alt="ноутбук" width="370" height="294">
+                <p class="portfolio__overlay portfolio__overlay-description">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                </p>
+          </div>
+          <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Технокряк</h2>
+            <p class="portfolio__description">Веб-сайт</p>
+          </div>
+    </a>
+        </li>
+        <li class="portfolio-list__item">
+    <a class="portfolio-list__link link" href="">
+        <div class="portfolio-list__box">
+            <img src="./images/portfolio/img-1.jpg" alt="баскетболисты" width="370" height="294">
+                <p class="portfolio__overlay portfolio__overlay-description">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                </p>
+        </div>
+        <div class="portfolio-list__wrapper">
+        <h2 class="portfolio__subtitle">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+        <p class="portfolio__description">Дизайн</p>
+    </div>
+    </a>
+        </li>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-2.jpg" alt="логотип ресторана" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>     
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Ресторан <span lang="en">Seafood</span></h2>
+            <p class="portfolio__description">Приложение</p>
+            </div>
+            </a>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-3.jpg" alt="наушники" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>      
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Проект <span lang="en">Prime</span></h2>
+            <p class="portfolio__description">Маркетинг</p>
+            </div>
+            </a>
+        </li>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-4.jpg" alt="коробки" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>         
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Проект <span lang="en">Boxes</span></h2>
+            <p class="portfolio__description">Приложение</p>
+            </div>
+            </a>
+        </li>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-5.jpg" alt="imac" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>        
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle" lang="en">Inspiration has no Borders</h2>
+            <p class="portfolio__description">Веб-сайт</p>
+            </div>
+            </a>
+        </li>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-6.jpg" alt="журнал" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>         
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Издание <span lang="en">Limited Edition</span></h2>
+            <p class="portfolio__description">Дизайн</p>
+            </div>
+            </a>
+        </li> 
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-7.jpg" alt="этикетка" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>      
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle">Проект <span lang="en">LAB</span></h2>
+            <p class="portfolio__description">Маркетинг</p>
+            </div>
+            </a>
+        </li>
+        <li class="portfolio-list__item">
+            <a class="portfolio-list__link link" href="">
+                <div class="portfolio-list__box">
+                    <img src="./images/portfolio/img-8.jpg" alt="ноутбук" width="370" height="294">
+                        <p class="portfolio__overlay portfolio__overlay-description">
+                          Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        </p>
+                </div>
+            <div class="portfolio-list__wrapper">
+            <h2 class="portfolio__subtitle" lang="en">Growing Business</h2>
+            <p class="portfolio__description">Приложение</p>
+            </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</section>
+</main>
+<footer class="footer">
+    <div class="container footer-container">
+    <div class="footer-address">
+            <a class="logo-footer link" href="">Web<span class="logo logo_theme_dark">Studio</span></a>
+        <address class="footer-contacts">
+            <ul id="contacts" class="footer-list list">
+                <li class="footer-list__item">
+                    <a class="footer-list__address link" href="https://goo.gl/maps/5pLSyK26MjpnqcrL8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer-list__item">
+                    <a class="footer-list__link link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer-list__item">
+                    <a class="footer-list__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address> 
+    </div>
+    <div class="footer-join">
+        <h2 class="footer-join__title">Присоединяйтесь</h2>
+        <ul class="footer-join-list list">
+            <li class="footer-join-list__item">
+                <a class="footer-join-list__link" href="">
+                    <svg class="footer-join-list__icon" width="20px" height="20px">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-join-list__item">
+                <a class="footer-join-list__link" href="">
+                    <svg class="footer-join-list__icon" width="20" height="16">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-join-list__item">
+                <a class="footer-join-list__link" href="">
+                    <svg class="footer-join-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-join-list__item">
+                <a class="footer-join-list__link" href="">
+                    <svg class="footer-join-list__icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <form class="footer-mailing">
+        <b class="footer-mailing__action">Подпишитесь на рассылку</b>
+        <div class="footer-mailing-form">
+        <input class="footer-mailing__input" type="email" name="user-mailing" placeholder="E-mail">
+        <button class="footer-mailing__button" type="submit">Подписаться
+        <svg class="footer-mailing__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-send"></use>
+        </svg>
+    </button>
+    </div>
+</form>
+    </div>
+</footer>
+</body>
+</html>
+
