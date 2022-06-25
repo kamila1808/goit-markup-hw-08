@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/hero/hero-mobile-image.jpg");
+    url("../images/hero/hero-mobile-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--accent-background);
@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/hero/hero-mobile-image@2x.jpg");
+      url("../images/hero/hero-mobile-image@2x.jpg");
   }
 }
 
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/hero/hero-tablet-image.jpg");
+      url("../images/hero/hero-tablet-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--accent-background);
@@ -67,7 +67,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/hero/hero-tablet-image@2x.jpg");
+        url("../images/hero/hero-tablet-image@2x.jpg");
     }
   }
 }
@@ -82,7 +82,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/hero/hero-desktop-image.jpg");
+      url("../images/hero/hero-desktop-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--accent-background);
@@ -95,36 +95,26 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/hero/hero-desktop-image@2x.jpg");
+        url("../images/hero/hero-desktop-image@2x.jpg");
     }
   }
+
+  .hero__title {
+    max-width: 696px;
+    min-height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    margin-bottom: 30px;
+  }
 }
-
-// .hero {
-//
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url("../images/hero/hero-background.jpg");
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-color: var(--accent-background);
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-// }
-
-// .hero__title {
-// max-width: 696px;
-// min-height: 120px;
-// font-weight: 900;
-// font-size: 44px;
-// line-height: 1.36;
-
-// text-align: center;
-// letter-spacing: 0.06em;
-// text-transform: uppercase;
-
-// color: #FFFFFF;
-
-// margin-right:auto;
-// margin-left:auto;
-// margin-bottom: 40px;
-// }
