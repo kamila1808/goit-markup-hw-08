@@ -742,7 +742,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -766,15 +766,37 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-tablet-image@2x.jpg");
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-desktop-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--accent-background);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-desktop-image@2x.jpg");
+  }
+}
 .advantages {
   padding-bottom: 0;
 }
 
 .advantages-list {
-  display: flex;
-  flex: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .advantages-list__container {
@@ -784,34 +806,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
-}
-
-.advantages-list__item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
-  min-width: 270px;
-}
-
-.advantages-list__subtitle {
-  margin-bottom: 10px;
-}
-
-.advantages-list__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.advantages-list__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+  background-color: #f5f4fa;
 }
 
 .services__title {
