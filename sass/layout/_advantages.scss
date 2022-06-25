@@ -4,13 +4,6 @@
 
 .advantages-list {
   display: block;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-  }
 }
 
 .advantages-list__container {
@@ -23,8 +16,7 @@
   background-color: #f5f4fa;
 }
 
-@media  screen and (max-width:480px) {
-
+@media screen and (max-width: 480px) {
   .advantages-list__subtitle {
     text-align: center;
   }
@@ -39,27 +31,79 @@
   }
 }
 
-
 .advantages-list__subtitle {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .advantages-list__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .advantages-list__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-    color: #757575;
+  color: #757575;
+}
+
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.advantages-list__container {
+    width: 354px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;;
+}
+
+.advantages-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-top: 15px;
+    margin-left: 15px;
+    min-width: 354px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display:flex;
+    flex: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.advantages-list__container {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;;
+}
+
+.advantages-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+    min-width: 270px;
+}
 }
 
 // .advantages{
