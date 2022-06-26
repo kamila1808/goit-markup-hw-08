@@ -1,35 +1,60 @@
 .logo {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    
-    color: #2196F3;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
 }
 
 .logo-header {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-footer {
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 700;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+
+@media screen and(min-width:768px){
+    .logo-header {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+      }
+}
+
+@media screen and(min-width:1200px) {
+  .logo {
     font-size: 26px;
     line-height: 1.19;
-  
-    letter-spacing: 0.03em;
-  
-    color: #2196f3;
   }
 
+  .logo-header {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo_theme_light {
-    color:#212121;
+  color: #212121;
 }
 
 .logo_theme_dark {
-color:#FFFFFF;
+  color: #ffffff;
 }
