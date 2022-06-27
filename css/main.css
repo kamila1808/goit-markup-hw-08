@@ -1349,6 +1349,32 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-address {
+    margin-left: 76px;
+  }
+
+  .footer-join {
+    margin-left: 165px;
+  }
+
+  .footer-mailing-action {
+    margin-top: 60px;
+  }
+
+  .footer-mailing__input {
+    display: block;
+    width: 450px;
+    padding: 15px 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .filter-portfolio-list {
   display: flex;
   justify-content: center;
