@@ -1202,6 +1202,14 @@ img {
     align-items: center;
   }
 
+  .our-clients-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+  }
+
   .our-clients-list__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -1328,7 +1336,6 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1343,6 +1350,11 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .footer-mailing__button {
+    margin-top: 20px;
+  }
+}
 
 .footer-mailing__icon {
   margin-left: 10px;
@@ -1354,25 +1366,81 @@ img {
     display: flex;
     align-items: baseline;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
   .footer-address {
     margin-left: 76px;
   }
-
+}
+@media screen and (min-width: 768px) {
   .footer-join {
     margin-left: 165px;
   }
-
+}
+@media screen and (min-width: 768px) {
   .footer-mailing-action {
     margin-top: 60px;
   }
-
+}
+@media screen and (min-width: 768px) {
   .footer-mailing__input {
     display: block;
     width: 450px;
     padding: 15px 16px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-join {
+    margin-left: 70px;
+  }
+
+  .footer-join-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-mailing {
+    margin-left: 93px;
+  }
+
+  .footer-mailing-form {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .footer-mailing__input {
+    width: 358px;
+    padding: 15px 16px;
+  }
+
+  .footer-mailing__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .footer-mailing__icon {
+    margin-left: 10px;
   }
 }
 .filter-portfolio-list {
