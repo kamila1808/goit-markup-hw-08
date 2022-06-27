@@ -30,6 +30,11 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-button" data-menu-open>
+            <svg class="mobile-menu-open-button__icon" width="40" height="40">
+                <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+        </button>
         <ul class="menu-address link list">
             <li class="menu-address__item">
                 <a class="menu-address__mail link list" href="mailto:info@devstudio.com">
@@ -48,6 +53,31 @@
                 </a>
             </li>
         </ul>
+    </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+<ul class="mobile-menu__list list">
+<li class="mobile-menu__list-item"><a class="mobile-menu__list-link  link" href="./index.html">Студия</a></li>
+<li class="mobile-menu__list-item"><a class="mobile-menu__list-link mobile-menu__link-current link" href="./portfolio.html">Портфолио</a></li>
+<li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="">Контакты</a></li>
+</ul>
+<ul class="mobile-menu__list-address list">
+<li class="mobile-menu__address-item"><a class="mobile-menu__link-phone link" href="">+38 096 111 11 11</a></li>
+<li class="mobile-menu__address-item"><a class="mobile-menu__link-mail link" href="">info@devstudio.com</a></li>
+</ul>
+<ul class="mobile-menu__social-list list">
+<li class="mobile-menu__social-list-item"><a class="mobile-menu__social-list-link link" href="">Instagram</a></li>
+<li class="mobile-menu__social-list-item"><a class="mobile-menu__social-list-link link" href="">Twitter</a></li>
+<li class="mobile-menu__social-list-item"><a class="mobile-menu__social-list-link link" href="">Facebook</a></li>
+<li class="mobile-menu__social-list-item"><a class="mobile-menu__social-list-link link" href="">LinkedIn</a></li>
+</ul>
+
+        </div>
     </div>
     </header>
 <main>
@@ -76,7 +106,21 @@
         <li class="portfolio-list__item">
       <a class="portfolio-list__link link" href="">
           <div class="portfolio-list__box">
-            <img src="./images/portfolio/img-0.jpg" alt="ноутбук" width="370" height="294">
+            <picture>
+                <source
+                srcset="./images/portfolio/portfolio-desktop-1.jpg 1x, ./images/portfolio/portfolio-desktop-1@2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source
+                srcset="./images/portfolio/portfolio-tablet-1.jpg 1x, ./images/portfolio/portfolio-tablet-1@2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source
+                srcset="./images/portfolio/portfolio-mobile-1.jpg 1x, ./images/portfolio/portfolio-mobile-1@2x.jpg 2x"
+                media="(max-width:767px)"
+                >
+                <img src="" alt="ноутбук">
+            </picture>
                 <p class="portfolio__overlay portfolio__overlay-description">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                 </p>
@@ -90,7 +134,21 @@
         <li class="portfolio-list__item">
     <a class="portfolio-list__link link" href="">
         <div class="portfolio-list__box">
-            <img src="./images/portfolio/img-1.jpg" alt="баскетболисты" width="370" height="294">
+            <picture>
+                <source
+                srcset="./images/portfolio/portfolio-desktop-2.jpg 1x, ./images/portfolio/portfolio-desktop-2@2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source
+                srcset="./images/portfolio/portfolio-tablet-2.jpg 1x, ./images/portfolio/portfolio-tablet-2@2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source
+                srcset="./images/portfolio/portfolio-mobile-2.jpg 1x, ./images/portfolio/portfolio-mobile-2@2x.jpg 2x"
+                media="(max-width:767px)"
+                >
+                <img src="" alt="баскетболисты">
+            </picture>
                 <p class="portfolio__overlay portfolio__overlay-description">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                 </p>
@@ -104,7 +162,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-2.jpg" alt="логотип ресторана" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-3.jpg 1x, ./images/portfolio/portfolio-desktop-3@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-3.jpg 1x, ./images/portfolio/portfolio-tablet-3@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-3.jpg 1x, ./images/portfolio/portfolio-mobile-3@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="логотип ресторана">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -117,7 +189,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-3.jpg" alt="наушники" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-4.jpg 1x, ./images/portfolio/portfolio-desktop-4@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-4.jpg 1x, ./images/portfolio/portfolio-tablet-4@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-4.jpg 1x, ./images/portfolio/portfolio-mobile-4@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="наушники">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -131,7 +217,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-4.jpg" alt="коробки" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-5.jpg 1x, ./images/portfolio/portfolio-desktop-5@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-5.jpg 1x, ./images/portfolio/portfolio-tablet-5@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-5.jpg 1x, ./images/portfolio/portfolio-mobile-5@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="коробки">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -145,7 +245,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-5.jpg" alt="imac" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-6.jpg 1x, ./images/portfolio/portfolio-desktop-6@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-6.jpg 1x, ./images/portfolio/portfolio-tablet-6@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-6.jpg 1x, ./images/portfolio/portfolio-mobile-6@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="imac">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -159,7 +273,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-6.jpg" alt="журнал" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-7.jpg 1x, ./images/portfolio/portfolio-desktop-7@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-7.jpg 1x, ./images/portfolio/portfolio-tablet-7@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-7.jpg 1x, ./images/portfolio/portfolio-mobile-7@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="журнал">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -173,7 +301,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-7.jpg" alt="этикетка" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-8.jpg 1x, ./images/portfolio/portfolio-desktop-8@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-8.jpg 1x, ./images/portfolio/portfolio-tablet-8@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-8.jpg 1x, ./images/portfolio/portfolio-mobile-8@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="этикетка">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -187,7 +329,21 @@
         <li class="portfolio-list__item">
             <a class="portfolio-list__link link" href="">
                 <div class="portfolio-list__box">
-                    <img src="./images/portfolio/img-8.jpg" alt="ноутбук" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="./images/portfolio/portfolio-desktop-9.jpg 1x, ./images/portfolio/portfolio-desktop-9@2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-tablet-9.jpg 1x, ./images/portfolio/portfolio-tablet-9@2x.jpg 2x"
+                        media="(min-width:768px)"
+                        >
+                        <source
+                        srcset="./images/portfolio/portfolio-mobile-9.jpg 1x, ./images/portfolio/portfolio-mobile-9@2x.jpg 2x"
+                        media="(max-width:767px)"
+                        >
+                        <img src="" alt="ноутбук">
+                    </picture>
                         <p class="portfolio__overlay portfolio__overlay-description">
                           Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -266,6 +422,7 @@
 </form>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

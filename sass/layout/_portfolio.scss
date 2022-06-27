@@ -1,7 +1,7 @@
 .filter-portfolio-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .filter-portfolio-list:active {
@@ -42,17 +42,10 @@
   }
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.portfolio-list__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and(max-width:480px){
+  .filter-portfolio-list__item:nth-last-child(-n+2){
+    margin-top: 15px;
+  }
 }
 
 .portfolio-list__wrapper {
@@ -83,6 +76,7 @@
   color: #757575;
 }
 
+
 .portfolio-list__link {
   font-family: inherit;
   color: inherit;
@@ -94,7 +88,8 @@
   }
 }
 
-/* ==========================Overlay================*/
+
+// /* ==========================Overlay================*/
 .portfolio-list__box {
   position: relative;
   overflow: hidden;
@@ -139,5 +134,40 @@
 
   color: #ffffff;
 }
+
+// .filter-portfolio-list {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 50px;
+// }
+
+
+
+
+
+
+
+// .portfolio-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: -30px;
+//   margin-top: -30px;
+// }
+
+// .portfolio-list__item {
+//   flex-basis: calc((100% - 90px) / 3);
+//   margin-left: 30px;
+//   margin-top: 30px;
+// }
+
+
+
+
+
+
+
+
+
+
 
 
