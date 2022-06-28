@@ -501,8 +501,9 @@ img {
   }
 
   .mobile-menu__social-list {
-    margin-top: 64px;
     display: flex;
+    margin-top: 64px;
+    margin-bottom: 0px;
   }
 
   .mobile-menu__social-list-item {
