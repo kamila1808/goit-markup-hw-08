@@ -418,6 +418,10 @@ img {
   background-color: #188ce8;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -473,6 +477,8 @@ img {
   }
 
   .mobile-menu__list-address {
+    position: absolute;
+    bottom: 134px;
     margin-top: 302px;
   }
 
@@ -503,7 +509,8 @@ img {
   .mobile-menu__social-list {
     display: flex;
     margin-top: 64px;
-    margin-bottom: 0px;
+    position: absolute;
+    bottom: 48px;
   }
 
   .mobile-menu__social-list-item {
@@ -641,10 +648,6 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-header {
-    border-bottom: 1px solid #ececec;
-  }
-
   .header {
     background-color: var(--header-background-color);
   }
