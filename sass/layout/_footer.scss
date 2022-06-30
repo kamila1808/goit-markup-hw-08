@@ -2,7 +2,6 @@
   background-color: var(--accent-background);
   padding: 60px 0px;
   text-align: center;
-  
 }
 
 .footer-list {
@@ -143,10 +142,10 @@
   align-items: center;
   justify-content: center;
 
-@media screen and(max-width:1199px){
-  margin-top: 20px;
-}
-  
+  @media screen and(max-width:1199px) {
+    margin-top: 20px;
+  }
+
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -171,20 +170,39 @@
   margin-right: 8px;
 }
 
-@media screen and(min-width:768px) {
-  .footer-tablet {
-    display: flex;
-    align-items: baseline;
-  }
+@media screen and(max-width:480px) {
+  // .footer-container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  //   padding-left: 60px;
+  //   padding-right: 60px;
 
-  @media screen and (max-width:768px){
-    .footer-address {
-      margin-left: 76px;
+
+    .footer-mailing__input {
+      display: block;
+      padding: 15px 16px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
-  .footer-join {
-    margin-left: 165px;
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .footer-mailing {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
   }
 
   .footer-mailing-action {
@@ -192,21 +210,11 @@
   }
 
   .footer-mailing__input {
-    display: block;
-
     width: 450px;
-    padding: 15px 16px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and(min-width:1200px) {
-  .footer {
-    text-align: left;
-  }
-
-
   .footer-list__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -214,6 +222,9 @@
   .footer-container {
     display: flex;
     align-items: baseline;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer-join {
@@ -224,7 +235,6 @@
     display: flex;
     justify-content: center;
   }
-  
 
   .footer-mailing {
     margin-left: 93px;
@@ -254,8 +264,6 @@
   }
 
   .footer-mailing__icon {
-  margin-left: 10px;
+    margin-left: 10px;
+  }
 }
-}
-
-
