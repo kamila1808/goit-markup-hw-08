@@ -244,18 +244,20 @@ img {
   pointer-events: none;
 }
 
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   min-width: 100%;
-  max-width: 100%;
-  height: auto;
+  min-height: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
 }
 
 .modal-close-button {
@@ -281,7 +283,20 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .contact-form {
+  padding: 40px 15px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -289,8 +304,8 @@ img {
 .contact-form__action {
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 15px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -356,6 +371,10 @@ img {
 }
 .contact-form__message::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .contact-form__checkbox {
@@ -369,8 +388,8 @@ img {
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 9px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -402,7 +421,6 @@ img {
 
 .contact-form__button {
   align-self: center;
-  width: 200px;
   padding: 10px 55px;
   margin-top: 30px;
   background-color: var(--accent-color);
@@ -420,6 +438,26 @@ img {
   background-color: #188ce8;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-form {
+    padding: 40px;
+  }
+
+  .contact-form__action {
+    font-size: 20px;
+    line-height: 1.5x;
+  }
+
+  .contact-form__checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .contact-form__message::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 .page-header {
   border-bottom: 1px solid #ececec;
 }
