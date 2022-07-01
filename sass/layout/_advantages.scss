@@ -12,6 +12,9 @@
   background-color: #f5f4fa;
 }
 
+.advantages-list__item:not(:last-child) {
+margin-bottom: 30px;
+}
 
 @media screen and (max-width: 480px) {
   .advantages-list__subtitle {

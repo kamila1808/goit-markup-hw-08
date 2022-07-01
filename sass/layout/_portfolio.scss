@@ -208,6 +208,10 @@
     flex-basis: calc((100% - 90px) / 3);
   }
 
+  .portfolio-list__item {
+    display: inline-block
+  }
+
   .portfolio-list__wrapper {
     flex-grow: 0;
   }

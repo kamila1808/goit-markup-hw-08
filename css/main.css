@@ -922,6 +922,10 @@ img {
   background-color: #f5f4fa;
 }
 
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 480px) {
   .advantages-list__subtitle {
     text-align: center;
@@ -1668,6 +1672,10 @@ img {
 
   .portfolio-list__item {
     flex-basis: calc((100% - 90px) / 3);
+  }
+
+  .portfolio-list__item {
+    display: inline-block;
   }
 
   .portfolio-list__wrapper {
