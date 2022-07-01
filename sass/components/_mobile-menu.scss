@@ -18,7 +18,7 @@
 
       z-index: 100;
 }
-  }
+  
 
   .mobile-menu.is-open {
     opacity: 1;
@@ -41,11 +41,11 @@
     border: none;
     padding: 0;
     line-height: 0;
-    top: 15px;
+    top: 10px;
     right: 15px;
     z-index: 101;
   }
-
+}
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
