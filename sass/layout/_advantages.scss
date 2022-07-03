@@ -16,14 +16,11 @@
 margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .advantages-list__subtitle {
     text-align: center;
   }
 
-  .advantages-list__subtitle {
-    text-align: center;
-  }
 
   .advantages-list__description {
     width: 100%;

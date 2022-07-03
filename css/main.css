@@ -926,11 +926,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
-  .advantages-list__subtitle {
-    text-align: center;
-  }
-
+@media screen and (max-width: 767px) {
   .advantages-list__subtitle {
     text-align: center;
   }
@@ -1016,6 +1012,10 @@ img {
     display: none;
   }
 }
+.services {
+  padding-top: 0px;
+}
+
 .services__title {
   font-weight: 700;
   font-size: 36px;
